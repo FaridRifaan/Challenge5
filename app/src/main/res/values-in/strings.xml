@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tantangan5</string>
+    <string name="wellcome">Selamat Datang</string>
+    <string name="home">Rumah</string>
+    <string name="register">Daftar</string>
+    <string name="profile">profil</string>
+    <string name="username">nama user</string>
+    <string name="logout">keluar</string>
+    <string name="login">masuk</string>
+</resources>

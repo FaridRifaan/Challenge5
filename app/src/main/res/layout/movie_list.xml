@@ -40,7 +40,7 @@
             android:id="@+id/releaseMovie"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/TextMovieList"
+            style="@style/TextMovieList2"
             android:text="movie release"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgMovie"

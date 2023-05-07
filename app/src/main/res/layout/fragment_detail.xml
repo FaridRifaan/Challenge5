@@ -20,7 +20,7 @@
         style="@style/DetailMovie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="tittle"
+        android:text="@string/tittle"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/movieImage" />
@@ -30,7 +30,7 @@
         style="@style/DetailMovie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="release"
+        android:text="@string/release"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleMovie" />
@@ -40,7 +40,7 @@
         style="@style/DetailMovie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="description"
+        android:text="@string/description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/releaseDataMovie" />
 

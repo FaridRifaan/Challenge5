@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="profile"
+        android:text="@string/profile"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
             android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="username"
+            android:hint="@string/username"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,7 +48,7 @@
             android:id="@+id/et_nama_lengkap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="nama_lengkap"
+            android:hint="@string/nama_lengkap"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -65,7 +65,7 @@
             android:id="@+id/et_tanggal_lahir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="tanggal_lahir"
+            android:hint="@string/tanggal_lahir"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,28 +82,28 @@
             android:id="@+id/et_alamat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="alamat"
+            android:hint="@string/alamat"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btn_update"
         style="@style/Btn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
-        android:text="update"
+        android:text="@string/update"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_alamat" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btn_logout"
         style="@style/Btn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:backgroundTint="@color/black"
-        android:text="logout"
+        android:text="@string/logout"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
