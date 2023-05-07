@@ -15,14 +15,13 @@ import com.google.firebase.auth.FirebaseAuth
 
 class RegisterFragment : Fragment() {
     lateinit var sharedPrefRegis : SharedPreferences
-    private var _binding: FragmentRegisterBinding? = null
-    private val binding get() = _binding!!
+    lateinit var binding: FragmentRegisterBinding
     lateinit var auth : FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
+        binding = FragmentRegisterBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
         return binding.root
     }

@@ -4,11 +4,14 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.os.Binder
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
@@ -23,7 +26,10 @@ class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
     lateinit var sharedPreferences: SharedPreferences
 
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -50,6 +56,8 @@ class HomeFragment : Fragment() {
 
     }
 
+
+
     override fun onStart() {
         super.onStart()
         val movieViewModel = ViewModelProvider(this).get(ViewModelMovie::class.java)
@@ -63,5 +71,5 @@ class HomeFragment : Fragment() {
 
     }
 
-
 }
+

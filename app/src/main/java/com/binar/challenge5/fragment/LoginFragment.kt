@@ -18,14 +18,13 @@ import com.google.firebase.auth.FirebaseAuth
 
 class LoginFragment : Fragment() {
     lateinit var sharedPref : SharedPreferences
-    private var _binding: FragmentLoginBinding? = null
-    private val binding get() = _binding!!
+    lateinit var binding: FragmentLoginBinding
     lateinit var auth : FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        binding = FragmentLoginBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
         return binding.root
     }
@@ -69,16 +68,11 @@ class LoginFragment : Fragment() {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        if(auth.currentUser != null){
-            findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
-        }
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
+//    override fun onStart() {
+//        super.onStart()
+//        if(auth.currentUser != null){
+//            findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
+//        }
+//    }
 
 }
